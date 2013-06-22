@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @survey.name %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @survey.zip %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @survey.dob %>
+</p>
+
+<p>
+  <b>Flowers:</b>
+  <%= @survey.flowers %>
+</p>
+
+<p>
+  <b>Anniversary date:</b>
+  <%= @survey.anniversary_date %>
+</p>
+
+<p>
+  <b>Dislikes:</b>
+  <%= @survey.dislikes %>
+</p>
+
+<p>
+  <b>Budget:</b>
+  <%= @survey.budget %>
+</p>
+
+<p>
+  <b>Ship address:</b>
+  <%= @survey.ship_address %>
+</p>
+
+<p>
+  <b>Ship zip:</b>
+  <%= @survey.ship_zip %>
+</p>
+
+<p>
+  <b>Ship city:</b>
+  <%= @survey.ship_city %>
+</p>
+
+<p>
+  <b>Phone num:</b>
+  <%= @survey.phone_num %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @survey.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<%= link_to 'Back', surveys_path %>

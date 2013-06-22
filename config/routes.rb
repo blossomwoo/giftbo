@@ -1,4 +1,19 @@
 Giftbo::Application.routes.draw do
+  resources :girltypes
+
+
+  resources :colors
+
+
+  resources :types
+
+
+  resources :surveys
+
+
+  resources :users
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

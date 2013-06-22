@@ -1,5 +1,7 @@
 *.gem
 *.rbc
+*.lock
+*.sqlite3
 .bundle
 .config
 coverage
@@ -11,6 +13,7 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+log
 
 # YARD artifacts
 .yardoc

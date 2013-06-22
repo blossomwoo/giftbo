@@ -1,0 +1,65 @@
+<%= form_for(@survey) do |f| %>
+  <% if @survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+      <ul>
+      <% @survey.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br />
+    <%= f.date_select :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :flowers %><br />
+    <%= f.text_field :flowers %>
+  </div>
+  <div class="field">
+    <%= f.label :anniversary_date %><br />
+    <%= f.date_select :anniversary_date %>
+  </div>
+  <div class="field">
+    <%= f.label :dislikes %><br />
+    <%= f.text_field :dislikes %>
+  </div>
+  <div class="field">
+    <%= f.label :budget %><br />
+    <%= f.text_field :budget %>
+  </div>
+  <div class="field">
+    <%= f.label :ship_address %><br />
+    <%= f.text_field :ship_address %>
+  </div>
+  <div class="field">
+    <%= f.label :ship_zip %><br />
+    <%= f.text_field :ship_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :ship_city %><br />
+    <%= f.text_field :ship_city %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_num %><br />
+    <%= f.text_field :phone_num %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
