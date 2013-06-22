@@ -12,13 +12,13 @@
 </head>
 <body>
   <div class="container">
-    <div class="navbar">
+    <div class="navbar navbar-inverse">
       <div class="navbar-inner">
         <%= link_to image_tag("giftbo_logo_navbar.png"), root_url, :class => "brand brand-img" %>
         <ul class="nav">
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="setup-notes.html">Survey</a></li>
-          <li><a href="navbar-examples.html">Gift List</a></li>              
+          <li><%= link_to "Survey", controller:"surveys", action:"new" %></li>
+          <li><%= link_to "Gift List", "#"%></li>              
         </ul>
       </div>
     </div>
