@@ -12,7 +12,10 @@
  *= require_self
  */
 
-
+.container{
+  width: 1000px;
+  margin: 10px auto;
+}
 .btn-gold{
   background: #c38c16;
   color: #FFF;
@@ -29,8 +32,21 @@
 }
 
 .signinbox{
+  font-weight: bold;
   color: #FFF;
   background: #000;
   text-align: center;
   font-size: 1.4em;
+  margin-top: 30px;
+  height: 100px;
+  padding: 50px 10px;
+}
+
+.container_fancy{
+  background: url(<%= image_path "left_bg_bar.png" %>) repeat-y;
+}
+
+.container_fancy .content{
+  width: 600px;
+  margin: 0 auto;
 }

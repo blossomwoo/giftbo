@@ -11,9 +11,9 @@
 <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <%= image_tag "giftbo_logo.png" %>
+  <div class="container container_fancy">
     <div class="content">
+      <%= image_tag "giftbo_logo.png", :width => 600 %>
       <%= yield %>
     </div>
   </div>
