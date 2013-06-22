@@ -8,6 +8,29 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require_tree .
+ *= require_self
  */
+
+
+.btn-gold{
+  background: #c38c16;
+  color: #FFF;
+  text-shadow: none;
+}
+
+.btn-gold:hover{
+  background: #ab7c16;
+  color: #fff;
+}
+
+.navbar .brand.brand-img{
+  padding: 5px 20px;
+}
+
+.signinbox{
+  color: #FFF;
+  background: #000;
+  text-align: center;
+  font-size: 1.4em;
+}
