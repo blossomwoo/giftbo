@@ -9,6 +9,13 @@ class SurveysController < ApplicationController
       format.json { render json: @surveys }
     end
   end
+  
+  def gift_list
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @survey }
+    end
+  end
 
   # GET /surveys/1
   # GET /surveys/1.json

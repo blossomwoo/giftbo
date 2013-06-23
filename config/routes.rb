@@ -10,7 +10,11 @@ Giftbo::Application.routes.draw do
   resources :types
 
 
-  resources :surveys
+  resources :surveys do
+    collection do
+      get 'gift_list'
+    end
+  end
 
 
   resources :users
