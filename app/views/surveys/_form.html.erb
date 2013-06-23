@@ -29,8 +29,8 @@
     <div class="controls"><%= f.date_select :dob, :start_year => 1975, :html_options => {:class => "input-small"} %></div>
   </div>
   <div class="control-group">
-    <%= f.label :flowers, "Describe her personality using up to 10 keywords", :class => "control-label wide-control" %>
-    <div class="controls"><%= f.text_area :flowers %></div>
+    <%= f.label :flowers, "Describe her personality using up to 10 keywords", :class => "control-label" %>
+    <div class="controls"><%= f.text_area :flowers, :class => "wide-control", :rows => "10" %></div>
   </div>
   <div class="control-group">
     <%= f.label :anniversary_date, :class => "control-label" %>

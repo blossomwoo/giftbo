@@ -13,6 +13,7 @@ Giftbo::Application.routes.draw do
   resources :surveys do
     collection do
       get 'gift_list'
+      get 'purchase_complete'
     end
   end
 
