@@ -1,3 +1,8 @@
+<style>
+	textarea {
+		rows:10;
+	}
+</style>
 <%= form_for @survey, :html => {:class => "form-horizontal" } do |f| %>
   <% if @survey.errors.any? %>
     <div id="error_explanation">
@@ -12,31 +17,31 @@
   <% end %>
 
   <div class="control-group">
-    <%= f.label :name, "Girlfriend Name", :class => "control-label" %>
+    <%= f.label :name, "Her Name", :class => "control-label" %>
     <div class="controls"><%= f.text_field :name %></div>
   </div>
   <div class="control-group">
-    <%= f.label :zip , "Girlfriend Zip", :class => "control-label" %>
+    <%= f.label :zip , "Her Zip Code", :class => "control-label" %>
     <div class="controls"><%= f.text_field :zip %></div>
   </div>
   <div class="control-group">
-    <%= f.label :dob, "Girlfriend Birthdate", :class => "control-label" %>
-    <div class="controls"><%= f.date_select :dob, :html_options => {:class => "input-small"} %></div>
+    <%= f.label :dob, "Her Date of Birth", :class => "control-label" %>
+    <div class="controls"><%= f.date_select :dob, :start_year => 1975, :html_options => {:class => "input-small"} %></div>
   </div>
   <div class="control-group">
-    <%= f.label :flowers, "Girlfriend favorite flower", :class => "control-label" %>
-    <div class="controls"><%= f.text_field :flowers %></div>
+    <%= f.label :flowers, "Describe her personality using up to 10 keywords", :class => "control-label" %>
+    <div class="controls"><%= f.text_area :flowers %></div>
   </div>
   <div class="control-group">
     <%= f.label :anniversary_date, :class => "control-label" %>
     <div class="controls"><%= f.date_select :anniversary_date %></div>
   </div>
   <div class="control-group">
-    <%= f.label :dislikes, :class => "control-label" %>
+    <%= f.label :dislikes, "Her Dislikes", :class => "control-label" %>
     <div class="controls"><%= f.text_field :dislikes %></div>
   </div>
   <div class="control-group">
-    <%= f.label :budget, :class => "control-label" %>
+    <%= f.label :budget, "Your Budget",:class => "control-label" %>
     <div class="controls"><%= f.text_field :budget %></div>
   </div>
   <div class="control-group">
@@ -52,7 +57,7 @@
     <div class="controls"><%= f.text_field :ship_city %></div>
   </div>
   <div class="control-group">
-    <%= f.label :phone_num, :class => "control-label" %>
+    <%= f.label :phone_num, "Her Phone Number", :class => "control-label" %>
     <div class="controls"><%= f.text_field :phone_num %></div>
   </div>
   <div class="actions pull-right">
