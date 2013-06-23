@@ -16,7 +16,7 @@
       <div class="navbar-inner">
         <%= link_to image_tag("giftbo_logo_navbar.png"), root_url, :class => "brand brand-img" %>
         <ul class="nav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><%= link_to "Home", root_path %></li>
           <li><%= link_to "Survey", controller:"surveys", action:"new" %></li>
           <li><%= link_to "Gift List", "#"%></li>              
         </ul>
